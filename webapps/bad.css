@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #4a148c;
+    color: white;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.header-content h1 {
+    font-size: 32px; /* Perbesar teks header untuk tampilan LCD */
+    margin-bottom: 5px;
+}
+
+.header-content p {
+    font-size: 20px;
+}
+
+.header-content .date {
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+.table-container {
+    padding: 30px; /* Tambahkan ruang agar lebih nyaman */
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-wrapper {
+    height: 500px; /* Sesuaikan tinggi sesuai keperluan */
+    overflow: hidden;
+    position: relative;
+    width: 95%; /* Perluas tabel hampir seluruh lebar layar */
+    max-width: 1400px; /* Sesuaikan untuk tampilan yang sangat lebar */
+}
+
+.availability-table {
+    width: 100%; /* Pastikan tabel menggunakan 100% lebar kontainer */
+    border-collapse: collapse;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    font-size: 24px; /* Perbesar teks tabel untuk lebih mudah dibaca */
+}
+
+.availability-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #4a148c;
+    color: white;
+}
+
+.availability-table thead th {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.availability-table tbody {
+    display: block;
+    max-height: 500px; /* Sesuaikan tinggi sesuai kebutuhan */
+    overflow: hidden;
+    width: 100%;
+}
+
+.availability-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Agar kolom tetap rata */
+}
+
+.availability-table th, .availability-table td {
+    padding: 20px; /* Menambah padding agar teks lebih mudah dibaca */
+    text-align: center;
+    border: 1px solid #ddd; /* Beri garis pada tiap sel */
+}
+
+.availability-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.availability-table tbody tr:hover {
+    background-color: #e8e4f7; /* Highlight saat di-hover */
+}
+
+.availability-table tbody td {
+    font-size: 24px; /* Tetap besar agar mudah terbaca */
+    color: #333;
+}
